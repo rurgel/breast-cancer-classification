@@ -1,0 +1,5 @@
+outs:
+- md5: 0f24c0d3de8ab729cc3de657254d04fe.dir
+  size: 1411076447
+  nfiles: 2481
+  path: benign
