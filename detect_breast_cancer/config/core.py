@@ -17,7 +17,6 @@ class Config(BaseModel):
     SEED: int
 
     LEARNING_RATE: float
-    CROP: int
     EPOCHS: int
 
     @validator('INPUT_PATH')

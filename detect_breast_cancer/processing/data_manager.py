@@ -14,6 +14,9 @@ def load_dataset(*,
                  validation_split=config.VALIDATION_SPLIT,
                  seed=config.SEED
                  ) -> Dataset:
+    
+    if subset == 'training':
+        image_size = (2*image_size[0], 2*image_size[1])
     ds = image_dataset_from_directory(
         input_path,
         validation_split=validation_split,
@@ -22,5 +25,6 @@ def load_dataset(*,
         shuffle=True,
         image_size=image_size,
         batch_size=batch_size,
+        label_mode='binary'
     )
     return ds
