@@ -1,0 +1,15 @@
+# Package Overview
+package_name: tumor_classification
+
+INPUT_PATH: train_dataset
+IMAGE_SIZE:
+  - 350
+  - 230
+BATCH_SIZE: 32
+VALIDATION_SPLIT: 0.2
+SEED: 42
+
+LEARNING_RATE: 0.001
+EPOCHS: 20
+
+CROP: 180

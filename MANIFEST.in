@@ -1,0 +1,16 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./detect_breast_cancer/*
+
+include detect_breast_cancer/trained_models/*.pkl
+include detect_breast_cancer/VERSION
+include detect_breast_cancer/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
